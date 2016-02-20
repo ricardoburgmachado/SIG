@@ -1,0 +1,2158 @@
+
+html {}
+
+body {
+  font-family: "CenturyGothicRegular", "Century Gothic", Arial, Helvetica, sans-serif;  
+  margin: 0px;
+  padding: 0px;
+  border: 0px; 
+}
+
+h1{
+    display: block;
+    float: left;
+    padding-left: 10px;
+    font-size: 40px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+div {
+  font-family: "CenturyGothicRegular", "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+#btnFecharModal{
+    
+    display: block;
+    background-image:  url('../imagens/Close-icon.png');
+    width: 45px;
+    height: 45px;      
+}
+
+/* obs.: existe uma redefinição em javascript de alguns dos parâmetros abaixo no arquivo selecaoOpcoesParametro.jsp e logo após a redefinição no arquivo modal.jsp*/
+#conteudoModal{
+    display:block; 
+    float: left; 
+    border: 1px solid black;     
+    width: 850px;        
+    height: 600px;    
+    background: white;   
+    overflow-y:auto;    
+    overflow-x:hidden
+}
+
+#page{
+    display: block;
+    width: 100%;
+    height: 930px;
+}
+
+#page #conteudo{    
+    margin: 0;
+    border: 1px solid red;
+    width: 735px;
+    min-height: 600px;
+}
+
+.mapa {
+  margin: 0;      
+  width: 100%;
+  display: block;
+ 
+  //width: 734px;
+  height: 100%;
+  //overflow-y: hidden;
+  position: absolute; 
+  //bottom: 0;
+}
+
+#carregando{
+    display: block;
+    //float: left;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    background:url(../imagens/loading.gif) no-repeat;    
+    margin-top: 250px;
+    margin-left: 400px;
+}
+
+/* ************** INICIO TOPO **************** */
+.header #topo{
+    display: block;
+    margin: 0 auto;
+    width: 750px;
+    height: 32px;
+}
+
+.header #topo #usuario{
+    display: block;
+    float: left; 
+   
+    width: 250px;
+    height: 32px;
+}
+
+.header #topo span #sairSistema{
+    display: block;
+    float: right; 
+   
+    width: 30px;
+    height: 32px;
+}
+
+/* ************** FIM TOPO **************** */
+
+
+
+/* ************** INICIO LOGIN **************** */
+#login{
+    display: block;
+    margin: 0 auto;    
+    width: 700px;
+    height: 500px;
+    margin-top: 70px;    
+}
+
+#login .titulo{
+    display: block;
+    margin: 0 auto;
+    padding-left: 10px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#login #form_login{
+    
+    display: block;
+    margin: 0 auto;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+}
+
+#login #form_login .bloco{    
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    clear: both;
+    width: 310px;
+}
+
+#login #form_login .bloco label{    
+    display: block;
+    float: left;  
+    width: 70px;
+    height: 25px;
+}
+
+#login #form_login .bloco input{    
+    display: block;
+    float: left;  
+    width: 180px;
+    height: 25px;
+}
+/* ************** FIM LOGIN **************** */
+
+
+
+
+/* ************** INICIO BOTÕES PADRÃO **************** */
+
+#btnSelecionarOpcoes {//equivalente a um botão voltar
+    display: block;
+    float: left;
+    margin-left: 25px;
+    margin-top: 7px;
+    width: 84px;
+    height: 23px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background:url(../imagens/botao_voltar.png) no-repeat;   
+} 
+
+
+#btnSelecionarOpcoes:hover {
+    background:url(../imagens/botao_voltar_hover.png) no-repeat;   
+} 
+
+#btnExportarResultados {//botão para gerar arquivo excel com os resultados
+    display: block;
+    float: right;
+    margin-right: 10px; 
+    margin-top: 7px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background:url(../imagens/planilha_23x23.png) no-repeat;   
+}
+
+#btnExportarResultados :hover {//botão para gerar arquivo excel com os resultados
+    background:url(../imagens/planilha_23x23_hover.png ) no-repeat;   
+}
+
+
+#btnNovoRegistro {
+    display: block;
+    float: right;
+    margin-right: 25px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background:url(../imagens/more.png) no-repeat;   
+} 
+
+#btnNovoRegistro:hover{
+    background:url(../imagens/more_hover.png) no-repeat;
+    border: none;
+} 
+
+#btnSalvarRegistro {
+    display: block;
+    float: left;
+    margin-left: 20px;   
+    height: 28px;
+    text-align: center;
+    cursor: pointer;    
+    background: #CCCCCC;   
+    border: 1px solid black;
+    text-decoration: none;   
+} 
+
+#btnPlotarGrafico {
+    display: block;
+    float: left;
+    margin-left: 290px;   
+    height: 35px;
+    text-align: center;
+    cursor: pointer;    
+    background: #CCCCCC;   
+    border: 1px solid black;
+    text-decoration: none;   
+} 
+
+#btnPlotarGrafico:hover {
+    background: #444444;
+    color: white;
+}
+
+#btnCancelarPlotar {
+    display: block;
+    float: left;
+    margin-left: 20px;   
+    height: 27px;
+    text-align: center;
+    cursor: pointer;    
+    background: #CCCCCC;   
+    border: 1px solid black;
+    text-decoration: none;   
+    color: black;
+    font-size: 13px;
+    padding: 8px 10px 0px 10px;
+} 
+
+#btnCancelarPlotar:hover {
+    background: #444444;
+    color: white;    
+}
+
+#btnSalvarRegistro:hover{
+   background: #CCCCCC;   
+    border: 1px solid white;
+} 
+
+#btnValidar {
+    display: block;
+    float: left;
+    margin-left: 20px;   
+    height: 28px;
+    text-align: center;
+    cursor: pointer;    
+    background: #CCCCCC;   
+    border: 1px solid black;
+    width: 75px;
+    text-decoration: none;   
+} 
+
+#btnValidar:hover{
+   background: #CCCCCC;   
+    border: 1px solid white;
+} 
+
+#btnCancelar {
+    display: block;
+    float: left;
+    margin-left: 20px;   
+    height: 23px;
+    text-align: center;
+    cursor: pointer;    
+    background: #CCCCCC;   
+    border: 1px solid black;
+    text-decoration: none;   
+    color: black;
+    font-size: 13px;
+    padding: 2px 8px 2px 8px;
+} 
+
+
+#btnCancelar:hover{
+  border: 1px solid white;
+} 
+
+#btnSairSistema{
+    display: block;
+    float: right;
+    margin-right: 20px;   
+    height: 28px;
+    text-align: center;
+    cursor: pointer;    
+    background: none;   
+    border: none;
+    text-decoration: none;   
+    color: black;
+    font-size: 13px;
+    padding: 7px 5px 0 5px;
+} 
+
+#btnSairSistema:hover{
+  color:white;  
+} 
+
+#btnListarRegistros {
+    display: block;
+    float: left;
+    float: right;
+    margin-right: 25px;
+    height: 28px;
+    width: 24px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background:url(../imagens/list.png) no-repeat;
+    border: none;
+    text-decoration: none;
+} 
+
+#btnListarRegistros:hover{
+   background:url(../imagens/list.png) no-repeat;
+   border: none;
+}
+
+#btnAcessarSistema {
+    display: block;
+
+    margin: 0 auto;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;    
+    background: #CCCCCC;   
+    border: 1px solid black;
+    text-decoration: none;   
+} 
+
+#btnAcessarSistema:hover{
+   background: #CCCCCC;   
+    border: 1px solid white;
+} 
+
+
+/* ************** FIM BOTÕES PADRÃO **************** */
+
+
+/* ************** INICIO LISTA USUÁRIOS **************** */
+#lista_usuarios {
+
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 825px;
+    height: auto;
+    padding: 0px 0px 10px 10px;
+    margin:  10px 0px 10px 10px;   
+}
+#lista_usuarios .sub_titulo {
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    width: 800px;    
+}
+#lista_usuarios .sub_titulo .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;    
+} 
+
+#lista_usuarios .sub_titulo .normal{
+    display: block;
+    float: left;
+    width: 270px;
+    text-align: center;    
+} 
+#lista_usuarios .sub_titulo .funcoes{
+    display: block;
+    float: left;
+    width: 120px;
+    text-align: center;    
+} 
+#lista_usuarios .linealt {
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: black;
+    width: 800px;
+    text-decoration: none;
+    height: 35px;
+    margin-top: 3px;   
+} 
+#lista_usuarios .linealt:hover{
+    background: #CCCCCC;
+}
+
+#lista_usuarios .linealt a{
+    text-decoration: none;
+    color: black;
+}
+
+#lista_usuarios .linealt .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;   
+} 
+
+#lista_usuarios .linealt .normal {
+    display: block;
+    float: left;
+    width: 270px;
+    text-align: center;
+} 
+
+
+#lista_usuarios .linealt .edita button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background:url(../imagens/edita.png) no-repeat;   
+} 
+
+#lista_usuarios .linealt .edita button:hover{
+    background:url(../imagens/edita_hover.png) no-repeat;
+    border: none;
+} 
+
+
+#lista_usuarios .linealt .exibe a{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    background:url(../imagens/more.png) no-repeat;
+    border: none;
+    margin-left: 10px;
+} 
+#lista_usuarios .linealt .exibe a:hover{
+    background:url(../imagens/more_hover.png) no-repeat;
+    border: none;
+} 
+#lista_usuarios .linealt .exclui a{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    background:url(../imagens/exclui.png) no-repeat;
+    border: none;
+    margin-left: 10px;
+} 
+#lista_usuarios .linealt .exclui a:hover{
+    background:url(../imagens/exclui_hover.png) no-repeat;
+    border: none;
+} 
+
+/* ************** FIM LISTA USUARIOS **************** */
+
+/* ************** INICIO CADASTRO ILHA **************** */
+
+#form_cad_ilha{
+    
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 810px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    margin:  10px 0px 10px 10px;
+    font-size: 16px;
+}
+
+#form_cad_ilha .bloco{    
+    display: block;
+    float: left;  
+    height: 50px;
+    clear: both;
+    width: 300px;
+}
+#form_cad_ilha .bloco #arquivo{
+    font-size: 14px; 
+    font-weight: normal; 
+    border: none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin-left: 20px;   
+    height: 28px;
+    width: 450px;
+    background: #CCCCCC;
+}
+
+#form_cad_ilha .bloco label{
+    display: block;
+    float: left;  
+    width: 75px;
+    height: 25px;
+}
+
+#form_cad_ilha #carregando{
+    display: block;
+    float: left;
+    width: 250px;
+    height: 22px;
+    text-align: center;
+    background:url(../imagens/ajax-loader.gif) no-repeat;
+    border: 1px solid red;
+    margin-left: 10px;    
+}
+#form_cad_ilha #span_carregando{
+    display: block;
+    float: left;
+    width: 350px;
+    height: 22px;
+    text-align: center;
+    border: none;
+    margin-left: 10px;    
+}
+
+#form_cad_ilha #span_carregando #loading {
+    display: block;
+    float: left;
+    width: 126px;
+    height: 22px;
+    text-align: center;
+    background:url(../imagens/ajax-loader.gif) no-repeat;
+    border: none;
+}
+
+/*
+display: block;
+    float: left;
+    margin-left: 20px;   
+    height: 28px;
+    text-align: center;
+    cursor: pointer;    
+    background: #CCCCCC;   
+    border: 1px solid black;
+    text-decoration: none;   
+    color: black;
+    font-size: 13px;
+    padding: 0 5px 0 5px;
+*/
+
+
+/* ************** FIM CADASTRO ILHA **************** */
+
+
+/* ************** INICIO CADASTRO USUÁRIOS **************** */
+#form_cadastro_usuario{
+    
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 810px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    margin:  10px 0px 10px 10px;
+    font-size: 16px;
+}
+
+#form_cadastro_usuario .bloco{    
+    display: block;
+    float: left;  
+    height: 50px;
+    clear: both;
+    width: 300px;
+}
+
+#form_cadastro_usuario .bloco label{    
+    display: block;
+    float: left;  
+    width: 75px;
+    height: 25px;
+}
+
+#form_cadastro_usuario .bloco input{    
+    display: block;
+    float: left;  
+    width: 200px;
+    height: 25px;
+}
+
+#form_cadastro_usuario .bloco select {    
+    display: block;
+    float: left;  
+    width: 160px;
+    height: 25px;
+}
+/* ************** FIM CADASTRO USUÁRIOS **************** */
+
+
+/* ************** INICIO CADASTRO PARAMETRO PLOTAGEM **************** */
+#form_cadastro_parametro_plotagem{
+    
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 810px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    margin:  10px 0px 10px 10px;
+    font-size: 16px;
+}
+
+#form_cadastro_parametro_plotagem .bloco{    
+    display: block;
+    float: left;  
+    height: 50px;
+    width: 300px;
+}
+
+#form_cadastro_parametro_plotagem .bloco .add{    
+    display: block;
+    float: left;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    background:url(../imagens/add.png) no-repeat;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#form_cadastro_parametro_plotagem .bloco .add:hover{
+    background:url(../imagens/add_hover.png) no-repeat;
+}    
+
+#form_cadastro_parametro_plotagem .bloco label{    
+    display: block;
+    float: left;  
+    width: 75px;
+    height: 25px;
+}
+
+#form_cadastro_parametro_plotagem .bloco input{    
+    display: block;
+    float: left;  
+    width: 200px;
+    height: 25px;
+}
+
+#form_cadastro_parametro_plotagem .bloco select {    
+    display: block;
+    float: left;  
+    width: 160px;
+    height: 25px;
+    font-size: 15px;
+}
+
+#form_cadastro_parametro_plotagem #statusInvalido {
+    display: none;
+    float: left;
+    width: 380px;
+    height: 21px;
+    text-align: left; 
+    border: none;
+    color:#900;
+    font-weight: bold;
+}
+
+#form_cadastro_parametro_plotagem #statusInvalidoInicial {
+    display: block;
+    float: left;
+    width: 380px;
+    height: 21px;
+    text-align: left; 
+    border: none;
+    color:#900;
+    font-weight: bold;
+}
+
+#form_cadastro_parametro_plotagem #statusInvalido .limparFormula {
+    text-decoration: none;  
+    color: black;
+    font-weight:normal;     
+}
+
+#form_cadastro_parametro_plotagem #statusInvalido .limparFormula:hover {
+    background-color:#444444; 
+}
+
+#form_cadastro_parametro_plotagem #statusValido {
+    display: none;
+    float: left;
+    width: 380px;
+    height: 21px;
+    text-align: left; 
+    border: none;
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+#form_cadastro_parametro_plotagem #statusValido .limparFormula {
+    text-decoration: none;  
+    color: black;
+    font-weight:normal; 
+}
+
+#form_cadastro_parametro_plotagem #statusValido .limparFormula:hover {
+    background-color:#444444; 
+}
+
+#form_cadastro_parametro_plotagem #resumoCadastro {    
+    display: none;
+    float: left;
+    width: 690px;
+    border:1px dashed #444444;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+/* ************** FIM CADASTRO PARAMETRO PLOTAGEM **************** */
+
+
+/* ************** INICIO EDIÇÃO PARAMETRO PLOTAGEM **************** */
+#form_edicao_parametro_plotagem{
+    
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 810px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    margin:  10px 0px 10px 10px;
+    font-size: 16px;
+}
+
+#form_edicao_parametro_plotagem .bloco{    
+    display: block;
+    float: left;  
+    height: 50px;
+    width: 300px;
+}
+
+#form_edicao_parametro_plotagem .bloco .add{    
+    display: block;
+    float: left;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    background:url(../imagens/add.png) no-repeat;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#form_edicao_parametro_plotagem .bloco .add:hover{
+    background:url(../imagens/add_hover.png) no-repeat;
+}    
+
+#form_edicao_parametro_plotagem .bloco label{    
+    display: block;
+    float: left;  
+    width: 75px;
+    height: 25px;
+}
+
+#form_edicao_parametro_plotagem .bloco input{    
+    display: block;
+    float: left;  
+    width: 200px;
+    height: 25px;
+}
+
+#form_edicao_parametro_plotagem .bloco select {    
+    display: block;
+    float: left;  
+    width: 160px;
+    height: 25px;
+    font-size: 15px;
+}
+
+#form_edicao_parametro_plotagem #statusInicial {//utilizado para apresentar o status(válido) no carregamento da página
+    display: block;
+    float: left;
+    width: 380px;
+    height: 21px;
+    text-align: left; 
+    border: none;
+    color: #0099FF;
+    font-weight: bold;
+}
+
+
+#form_edicao_parametro_plotagem #statusInvalido {
+    display: none;
+    float: left;
+    width: 380px;
+    height: 21px;
+    text-align: left; 
+    border: none;
+    color:#900;
+    font-weight: bold;
+}
+
+#form_edicao_parametro_plotagem #statusInvalido .limparFormula {
+    text-decoration: none;  
+    color: black;
+    font-weight:normal;     
+}
+
+#form_edicao_parametro_plotagem #statusInvalido .limparFormula:hover {
+    background-color:#444444; 
+}
+
+#form_edicao_parametro_plotagem #statusValido {
+    display: none;
+    float: left;
+    width: 380px;
+    height: 21px;
+    text-align: left; 
+    border: none;
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+#form_edicao_parametro_plotagem #statusValido .limparFormula {
+    text-decoration: none;  
+    color: black;
+    font-weight:normal; 
+}
+
+#form_edicao_parametro_plotagem #statusValido .limparFormula:hover {
+    background-color:#444444; 
+}
+
+#form_edicao_parametro_plotagem #resumoCadastro {    
+    display: none;
+    float: left;
+    width: 690px;
+    border:1px dashed #444444;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+/* ************** FIM EDIÇÃO PARAMETRO PLOTAGEM **************** */
+
+
+
+/* ************** INICIO CADASTRO CLASSES **************** */
+#form_cadastro_classe{
+    
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 810px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    margin:  10px 0px 10px 10px;
+    font-size: 16px;
+}
+
+#form_cadastro_classe .bloco{    
+    display: block;
+    float: left;  
+    height: 50px;
+    clear: both;
+    width: 300px;
+}
+
+#form_cadastro_classe .bloco label{    
+    display: block;
+    float: left;  
+    width: 90px;
+    height: 25px;
+}
+
+#form_cadastro_classe .bloco input{    
+    display: block;
+    float: left;  
+    width: 200px;
+    height: 25px;
+}
+
+#form_cadastro_classe .bloco select {    
+    display: block;
+    float: left;  
+    width: 160px;
+    height: 25px;
+}
+/* ************** FIM CADASTRO CLASSES **************** */
+
+
+/* ************** INICIO CADASTRO PARAMETRO **************** */
+#form_cadastro_parametro{
+    
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 810px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    margin:  10px 0px 10px 10px;
+    font-size: 16px;
+}
+
+#form_cadastro_parametro .bloco{    
+    display: block;
+    float: left;  
+    height: 50px;
+    clear: both;
+    width: 425px;
+}
+
+#form_cadastro_parametro .bloco label{    
+    display: block;
+    float: left;  
+    width: 165px;
+    height: 25px;    
+}
+
+#form_cadastro_parametro .bloco input{    
+    display: block;
+    float: left;  
+    width: 225px;
+    height: 25px;
+}
+
+#form_cadastro_parametro .bloco select {    
+    display: block;
+    float: left;  
+    width: 160px;
+    height: 25px;
+}
+/* ************** FIM CADASTRO PARAMETRO **************** */
+
+
+/* ************** INICIO LISTA CLASSES **************** */
+#lista_classes {
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 825px;
+    height: auto;
+    padding: 0px 0px 10px 10px;
+    margin:  10px 0px 10px 10px;   
+}
+#lista_classes .sub_titulo {
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    width: 800px;    
+}
+#lista_classes .sub_titulo .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;    
+} 
+
+#lista_classes .sub_titulo .normal{
+    display: block;
+    float: left;
+    width: 320px;
+    text-align: center;    
+} 
+#lista_classes .sub_titulo .funcoes{
+    display: block;
+    float: left;
+    width: 120px;
+    text-align: center;    
+} 
+#lista_classes .linealt {
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: black;
+    width: 800px;
+    text-decoration: none;
+    height: 35px;
+    margin-top: 3px;   
+} 
+#lista_classes .linealt:hover{
+    background: #CCCCCC;
+}
+
+#lista_classes .linealt a{
+    text-decoration: none;
+    color: black;
+}
+
+#lista_classes .linealt .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;   
+} 
+
+#lista_classes .linealt .normal {
+    display: block;
+    float: left;
+    width: 320px;
+    text-align: center;
+} 
+
+#lista_classes .linealt .edita button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background:url(../imagens/edita.png) no-repeat;   
+} 
+
+#lista_classes .linealt .edita button:hover{
+    background:url(../imagens/edita_hover.png) no-repeat;
+    border: none;
+} 
+
+#lista_classes .linealt .exibe button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    background:url(../imagens/more.png) no-repeat;
+    border: none;
+    margin-left: 10px;
+} 
+#lista_classes .linealt .exibe button:hover{
+    background:url(../imagens/more_hover.png) no-repeat;
+    border: none;
+} 
+#lista_classes .linealt .exclui button{
+   display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    background:url(../imagens/exclui.png) no-repeat;  
+} 
+#lista_classes .linealt .exclui button:hover{
+    background:url(../imagens/exclui_hover.png) no-repeat;
+    border: none;
+} 
+/* ************** FIM LISTA CLASSES **************** */
+
+
+/* ************** INICIO LISTA ILHAS **************** */
+#lista_ilhas {
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 825px;
+    height: auto;
+    padding: 0px 0px 10px 10px;
+    margin:  10px 0px 10px 10px;   
+}
+#lista_ilhas .sub_titulo {
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    width: 800px;    
+}
+#lista_ilhas .sub_titulo .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;    
+} 
+
+#lista_ilhas .sub_titulo .normal{
+    display: block;
+    float: left;
+    width: 320px;
+    text-align: center;    
+} 
+#lista_ilhas .sub_titulo .funcoes{
+    display: block;
+    float: left;
+    width: 120px;
+    text-align: center;    
+} 
+#lista_ilhas .linealt {
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: black;
+    width: 800px;
+    text-decoration: none;
+    height: 35px;
+    margin-top: 3px;   
+} 
+#lista_ilhas .linealt:hover{
+    background: #CCCCCC;
+}
+
+#lista_ilhas .linealt a{
+    text-decoration: none;
+    color: black;
+}
+
+#lista_ilhas .linealt .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;   
+} 
+
+#lista_ilhas .linealt .normal {
+    display: block;
+    float: left;
+    width: 320px;
+    text-align: center;
+} 
+
+#lista_ilhas .linealt .edita button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background:url(../imagens/edita.png) no-repeat;   
+} 
+
+#lista_ilhas .linealt .edita button:hover{
+    background:url(../imagens/edita_hover.png) no-repeat;
+    border: none;
+} 
+
+#lista_ilhas .linealt .exibe button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    background:url(../imagens/more.png) no-repeat;
+    border: none;
+    margin-left: 10px;
+} 
+#lista_ilhas .linealt .exibe button:hover{
+    background:url(../imagens/more_hover.png) no-repeat;
+    border: none;
+} 
+#lista_ilhas .linealt .exclui button{
+   display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    background:url(../imagens/exclui.png) no-repeat;  
+} 
+#lista_ilhas .linealt .exclui button:hover{
+    background:url(../imagens/exclui_hover.png) no-repeat;
+    border: none;
+} 
+/* ************** FIM LISTA ILHAS **************** */
+
+
+/* ************** INICIO LISTA PARAMETROS **************** */
+#lista_parametros {
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 825px;
+    height: auto;
+    padding: 0px 0px 10px 10px;
+    margin:  10px 0px 10px 10px;   
+}
+#lista_parametros .sub_titulo {
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    width: 800px;    
+}
+#lista_parametros .sub_titulo .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;   
+    
+} 
+
+#lista_parametros .sub_titulo .normal{
+    display: block;
+    float: left;
+    width: 180px;
+    text-align: center;    
+} 
+#lista_parametros .sub_titulo .funcoes{
+    display: block;
+    float: left;
+    width: 120px;
+    text-align: center;    
+} 
+#lista_parametros .linealt {
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: black;
+    width: 800px;
+    text-decoration: none;
+    height: 35px;
+    margin-top: 3px;   
+} 
+#lista_parametros .linealt:hover{
+    background: #CCCCCC;
+}
+
+#lista_parametros .linealt a{
+    text-decoration: none;
+    color: black;
+}
+
+#lista_parametros .linealt .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;   
+} 
+
+#lista_parametros .linealt .normal {
+    display: block;
+    float: left;
+    width: 180px;
+    text-align: center;
+} 
+
+#lista_parametros .linealt .edita button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background:url(../imagens/edita.png) no-repeat;   
+} 
+
+#lista_parametros .linealt .edita button:hover{
+    background:url(../imagens/edita_hover.png) no-repeat;
+    border: none;
+} 
+
+#lista_parametros .linealt .exibe button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    background:url(../imagens/more.png) no-repeat;
+    border: none;
+    margin-left: 10px;
+} 
+#lista_parametros .linealt .exibe button:hover{
+    background:url(../imagens/more_hover.png) no-repeat;
+    border: none;
+} 
+#lista_parametros .linealt .exclui button{
+   display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    background:url(../imagens/exclui.png) no-repeat;  
+} 
+#lista_parametros .linealt .exclui button:hover{
+    background:url(../imagens/exclui_hover.png) no-repeat;
+    border: none;
+} 
+/* ************** FIM LISTA PARAMETROS **************** */
+
+
+
+/* ************** INICIO LISTA PARAMETRO PLOTAGEM **************** */
+#lista_parametro_plotagem {
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 825px;
+    height: auto;
+    padding: 0px 0px 10px 10px;
+    margin:  10px 0px 10px 10px;   
+}
+#lista_parametro_plotagem .sub_titulo {
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    width: 800px;    
+}
+#lista_parametro_plotagem .sub_titulo .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;   
+    
+} 
+
+#lista_parametro_plotagem .sub_titulo .normal{
+    display: block;
+    float: left;
+    width: 180px;
+    text-align: center;    
+} 
+#lista_parametro_plotagem .sub_titulo .funcoes{
+    display: block;
+    float: left;
+    width: 120px;
+    text-align: center;    
+} 
+#lista_parametro_plotagem .linealt {
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: black;
+    width: 800px;
+    text-decoration: none;
+    height: 35px;
+    margin-top: 3px;   
+} 
+#lista_parametro_plotagem .linealt:hover{
+    background: #CCCCCC;
+}
+
+#lista_parametro_plotagem .linealt a{
+    text-decoration: none;
+    color: black;
+}
+
+#lista_parametro_plotagem .linealt .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;   
+} 
+
+#lista_parametro_plotagem .linealt .normal {
+    display: block;
+    float: left;
+    width: 250px;
+    text-align: center;
+} 
+
+#lista_parametro_plotagem .linealt .edita button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background:url(../imagens/edita.png) no-repeat;   
+} 
+
+#lista_parametro_plotagem .linealt .edita button:hover{
+    background:url(../imagens/edita_hover.png) no-repeat;
+    border: none;
+} 
+
+#lista_parametro_plotagem .linealt .exibe button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    background:url(../imagens/more.png) no-repeat;
+    border: none;
+    margin-left: 10px;
+} 
+#lista_parametro_plotagem .linealt .exibe button:hover{
+    background:url(../imagens/more_hover.png) no-repeat;
+    border: none;
+} 
+#lista_parametro_plotagem .linealt .exclui button{
+   display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    background:url(../imagens/exclui.png) no-repeat;  
+} 
+#lista_parametro_plotagem .linealt .exclui button:hover{
+    background:url(../imagens/exclui_hover.png) no-repeat;
+    border: none;
+} 
+/* ************** FIM LISTA PARAMETRO PLOTAGEM **************** */
+
+
+
+/* ************** INICIO LISTA TEMPLATE PADRÃO **************** */
+#lista_templates_padrao {
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 825px;
+    height: auto;
+    padding: 0px 0px 10px 10px;
+    margin:  10px 0px 10px 10px;   
+}
+#lista_templates_padrao .sub_titulo {
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    width: 800px;    
+}
+#lista_templates_padrao .sub_titulo .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;    
+} 
+
+#lista_templates_padrao .sub_titulo .normal{
+    display: block;
+    float: left;
+    width: 500px;
+    text-align: center;    
+} 
+#lista_templates_padrao .sub_titulo .funcoes{
+    display: block;
+    float: left;
+    width: 120px;
+    text-align: center;    
+} 
+#lista_templates_padrao .linealt {
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: black;
+    width: 800px;
+    text-decoration: none;
+    height: 35px;
+    margin-top: 3px;   
+} 
+#lista_templates_padrao .linealt:hover{
+    background: #CCCCCC;
+}
+
+#lista_templates_padrao .linealt a{
+    text-decoration: none;
+    color: black;
+}
+
+#lista_templates_padrao .linealt .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;   
+} 
+
+#lista_templates_padrao .linealt .normal {
+    display: block;
+    float: left;
+    width: 500px;
+    text-align: center;
+} 
+
+#lista_templates_padrao .linealt .edita button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background:url(../imagens/edita.png) no-repeat;   
+} 
+
+#lista_templates_padrao .linealt .edita button:hover{
+    background:url(../imagens/edita_hover.png) no-repeat;
+    border: none;
+} 
+
+#lista_templates_padrao .linealt .exibe button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    background:url(../imagens/more.png) no-repeat;
+    border: none;
+    margin-left: 10px;
+} 
+#lista_templates_padrao .linealt .exibe button:hover{
+    background:url(../imagens/more_hover.png) no-repeat;
+    border: none;
+} 
+#lista_templates_padrao .linealt .exclui button{
+   display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    background:url(../imagens/exclui.png) no-repeat;  
+} 
+#lista_templates_padrao .linealt .exclui button:hover{
+    background:url(../imagens/exclui_hover.png) no-repeat;
+    border: none;
+} 
+/* ************** FIM LISTA TEMPLATE PADRÃO **************** */
+
+
+/* ************** INICIO LISTA FATOR AJUSTE **************** */
+#lista_fator_ajuste {
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 825px;
+    height: auto;
+    padding: 0px 0px 10px 10px;
+    margin:  10px 0px 10px 10px;   
+}
+#lista_fator_ajuste .sub_titulo {
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    width: 800px;    
+}
+#lista_fator_ajuste .sub_titulo .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;    
+} 
+
+#lista_fator_ajuste .sub_titulo .normal{
+    display: block;
+    float: left;
+    width: 290px;
+    text-align: center;    
+} 
+#lista_fator_ajuste .sub_titulo .funcoes{
+    display: block;
+    float: left;
+    width: 120px;
+    text-align: center;    
+} 
+#lista_fator_ajuste .linealt {
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: black;
+    width: 800px;
+    text-decoration: none;
+    height: 35px;
+    margin-top: 3px;   
+} 
+#lista_fator_ajuste .linealt:hover{
+    background: #CCCCCC;
+}
+
+#lista_fator_ajuste .linealt a{
+    text-decoration: none;
+    color: black;
+}
+
+#lista_fator_ajuste .linealt .id{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;   
+} 
+
+#lista_fator_ajuste .linealt .normal {
+    display: block;
+    float: left;
+    width: 290px;
+    text-align: center;
+} 
+
+#lista_fator_ajuste .linealt .edita button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background:url(../imagens/edita.png) no-repeat;   
+} 
+
+#lista_fator_ajuste .linealt .edita button:hover{
+    background:url(../imagens/edita_hover.png) no-repeat;
+    border: none;
+} 
+
+#lista_fator_ajuste .linealt .exibe button{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    background:url(../imagens/more.png) no-repeat;
+    border: none;
+    margin-left: 10px;
+} 
+#lista_fator_ajuste .linealt .exibe button:hover{
+    background:url(../imagens/more_hover.png) no-repeat;
+    border: none;
+} 
+#lista_fator_ajuste .linealt .exclui button{
+   display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    background:url(../imagens/exclui.png) no-repeat;  
+} 
+#lista_fator_ajuste .linealt .exclui button:hover{
+    background:url(../imagens/exclui_hover.png) no-repeat;
+    border: none;
+} 
+/* ************** FIM LISTA FATOR AJUSTE **************** */
+
+
+/* ************** INICIO CADASTRO FATOR AJUSTE **************** */
+#form_cadastro_fator_ajuste{
+    
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 810px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    margin:  10px 0px 10px 10px;
+    font-size: 16px;
+}
+
+#form_cadastro_fator_ajuste .bloco{    
+    display: block;
+    float: left;  
+    height: 50px;
+    clear: both;
+    width: 300px;
+}
+
+#form_cadastro_fator_ajuste .bloco label{    
+    display: block;
+    float: left;  
+    width: 90px;
+    height: 25px;
+}
+
+#form_cadastro_fator_ajuste .bloco input{    
+    display: block;
+    float: left;  
+    width: 200px;
+    height: 25px;
+}
+
+#form_cadastro_fator_ajuste .bloco select {    
+    display: block;
+    float: left;  
+    width: 160px;
+    height: 25px;
+}
+/* ************** FIM CADASTRO CLASSES **************** */
+
+
+
+
+
+
+
+/* ************** INICIO CADASTRO TEMPLATE PADRÃO **************** */
+#form_cadastro_template_padrao{
+    
+    display: block;
+    float: left;
+    background-color: #E4E4E4;
+    border: 1px solid #444444;
+    width: 810px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    margin:  10px 0px 10px 10px;
+    font-size: 16px;
+}
+
+#form_cadastro_template_padrao .bloco{    
+    display: block;
+    float: left;  
+    height: 50px;
+    clear: both;
+    width: 400px;
+}
+
+#form_cadastro_template_padrao .bloco label{    
+    display: block;
+    float: left;  
+    width: 115px;
+    height: 25px;
+}
+
+#form_cadastro_template_padrao .bloco input{    
+    display: block;
+    float: left;  
+    width: 200px;
+    height: 25px;
+}
+
+#form_cadastro_template_padrao .bloco select {    
+    display: block;
+    float: left;  
+    width: 160px;
+    height: 25px;
+}
+/* ************** FIM CADASTRO TEMPLATE PADRÃO **************** */
+
+/* ************** INICIO OPÇÕES SELEÇÃO PARAMETROS **************** */
+#opcoes_selecao_parametros {    
+    display: block;
+    float: left;
+    width: 810px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    margin:  10px 0px 10px 10px;
+    font-size: 16px;
+    background: #E4E4E4;
+}
+
+#opcoes_selecao_parametros #eixos {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#opcoes_selecao_parametros #eixos tr{
+    display: block;
+    float: left;
+    width: 400px;
+
+}
+
+#opcoes_selecao_parametros #eixos tr td{
+    display: block;
+    float: left;   
+    width: 400px;
+    text-align: center;
+}
+
+#opcoes_selecao_parametros #eixos tr td:hover{
+    background-color: white;
+}
+
+#opcoes_selecao_parametros #eixos tr .subtitulo{
+    display: block;
+    float: left;   
+    width: 400px;
+    text-align: center;
+    border-bottom: 1px solid #444444;
+    font-size: 18px;
+}
+
+#opcoes_selecao_parametros #eixos tr .subtitulo:hover{
+    background-color:#E4E4E4;
+}
+
+#opcoes_selecao_parametros #eixos tr td label{
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 7px;
+}
+
+#opcoes_selecao_parametros #eixos tr td input{
+    display: block;
+    float: left;
+     width: 100%;
+     cursor: pointer;
+}
+
+#opcoes_selecao_parametros #eixos tr td select{
+    display: block;
+    float: left;
+    clear: both;
+    cursor:pointer;
+}
+
+#opcoes_selecao_parametros #eixos tr td select:hover{
+    cursor:pointer;    
+}
+
+#parametros_selecionados {
+    display: block;
+    float: right;
+    width: 500px;
+    border: 1px dashed #444444;
+    margin-right: 10px;
+    overflow: auto;
+    //overflow-x: scroll;
+    //overflow-y: scroll;
+    height: 130px;    
+    padding-left: 3px;
+    padding-top: 3px;
+    
+}
+
+#parametros_selecionados #titulo {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+}
+
+#parametros_selecionados #blocoLeft {
+    display: block;
+    float: left;
+    width: 205px;
+    border:none;
+}
+
+#parametros_selecionados #blocoRight {
+    display: block;
+    float: right;
+    width: 275px;
+    border:none;
+}
+
+#parametros_selecionados #blocoRight #eixos {
+    display: block;
+    float: right;
+    width: 98px;
+    height: 72px;
+    text-align: center;
+    cursor: pointer;
+    border: none;   
+    margin-right: 170px;
+    background:url(../imagens/eixos.png) no-repeat;      
+}
+
+#parametros_selecionados #eixoY {
+    display: block;
+    float: left;
+    width: 245px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+#parametros_selecionados #blocoLeft #eixoXCaract {
+    display: block;
+    float: right;
+    width: 100%;
+    clear:both;
+}
+
+#parametros_selecionados #blocoLeft #eixoXCompress {
+    display: block;
+    float: right;
+    width: 100%;
+    clear:both;
+}
+
+#parametros_selecionados #blocoLeft #eixoXResist {
+    display: block;
+    float: right;
+    width: 100%;
+    clear:both;
+}
+
+#fatores {
+    display: block;
+    float: left;
+    width: 320px;
+    //border: 1px dashed #444444;
+    border:none;
+    margin-left: 10px;
+}
+
+#fatores .conteudo {
+    display: block;
+    float: left;
+    width: 302px;
+    clear: both;
+    height: 25px;
+    margin-bottom: 3px;
+}
+
+
+#fatores .valorFator {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 18px;
+    font-size: 11px;
+}
+
+#fatores .label {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 18px;
+    font-size: 13px;
+    border-bottom: 1px solid #444444;
+}
+/* ************** FIM OPÇÕES SELEÇÃO PARAMETROS **************** */
+
+
+
+
+#span_carregando_grafico{
+    display: block;
+    float: right;
+    width: 130px;
+    height: 22px;
+    text-align: center;
+    border: none;
+    margin-left: 10px;    
+    margin-top: 7px;
+}
+
+#span_carregando_grafico #loading {
+    display: block;
+    float: right;
+    width: 126px;
+    height: 22px;
+    text-align: center;
+    background:url(../imagens/ajax-loader.gif) no-repeat;
+    border: none;
+}
+
+
+
+/*
+#principal {    
+    display: block;
+    border: 1px solid black;
+    width: 913px;
+    min-height: 900px;
+    margin: 0 auto;    
+}
+
+#barrasuperior {
+    display: block;
+    width: 892px;
+    height: 35px;
+    background-image:  url('../imagens/barrasuperior.png');
+    //border: 1px solid blue;
+    margin: 0 auto;
+}
+
+#sub-barrasuperior{
+    
+    display: block;
+    width: 913px;
+    height: 26px;
+    background:  #CCCCCC;
+    margin: 0 auto;
+}
+
+#conteudo{    
+    display: block;
+    float: left;
+    //border: 1px solid red;
+    width: 735px;
+    min-height: 600px;
+}
+
+.mapa {
+  //width: 100%;
+  display: block;
+  float: left;
+  width: 734px;
+  height: 600px;
+  //overflow-y: hidden;
+  position: absolute; 
+  //bottom: 0;
+}
+*/
+/* inicio menu vertical */
+/*
+#menuvertical {
+    //fonte: http://www.cssportal.com/vertical-menus/13styles.php    
+    display: block;
+    width: 170px;
+    height: 300px;
+    background: #495762;
+    
+    float: left;
+}
+
+#menuvertical ul.vert-one{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    display:block;
+    font:bold 16px Helvetica, Verdana, Arial, sans-serif;
+    line-height:165%;
+    width:170px;
+}
+
+#menuvertical ul.vert-one li{
+    margin:0;
+    padding:0;
+    border-top:1px solid #4D0000;
+    border-bottom:1px solid white;
+}
+
+#menuvertical ul.vert-one li a{
+    display:block;
+    text-decoration:none;
+    color:#fff;
+    background:#495762;
+    padding:0 0 0 0;
+    width:170px;
+}
+
+#menuvertical ul.vert-one li a:hover{
+    background:#900 url("images/vert-one_arrow.gif") no-repeat 0 9px;}
+
+#menuvertical ul.vert-one li a.current,ul.vert-one li a.current:hover{
+    background:#933 url("images/vert-one_arrow.gif") no-repeat 0 9px;}
+*/
+/* fim menu vertical */
+
+
+
+/*INICIO CADASTRO DE ILHA*/
+/*
+#form_cad_ilha{ } 
+*/
+
+
+
+/*FIM CADASTRO DE ILHA*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.principal {
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.painel {
+  width: 100%;
+  height: 100px; 
+  padding-top: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.logotipo_unipampa {
+  position: fixed;
+  left: 2%;
+}
+
+.logotipo_coppe {
+  position: fixed;
+  right: 2%;
+}
+
+.linha_cima {
+  background: #FFFFFF url('recursos/imagens/bg.png') 0px 1px repeat-x;
+  overflow-y: hidden;
+  height: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.menu_superior {
+  width: 100%;
+}
+
+.mapa {
+  width: 100%;
+  height: 100%;
+  //overflow-y: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.labels {
+  vertical-align: top; 
+  position: absolute; 
+  bottom: 26px; 
+  left: 0px; 
+  font-weight: bold; 
+  padding: 3px; 
+  color: #FFFFFF;
+}
+*/

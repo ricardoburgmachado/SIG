@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    
+    
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    
+    
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sig2?zeroDateTimeBehavior=convertToNull</property>    
+
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password"></property>
+    <!--    
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">solos</property>
+    -->              
+    <property name="hibernate.show_sql">false</property> 
+    
+    <property name="hibernate.current_session_context_class">thread</property>
+
+    <property name="hibernate.c3p0.min_size">5</property>
+    <property name="hibernate.c3p0.max_size">20</property>
+    <property name="hibernate.c3p0.timeout">300</property>
+    <!--<property name="hibernate.c3p0.max_statements">50</property>-->
+    <!--<property name="hibernate.c3p0.idle_test_period">3000</property>-->
+    <property name="hibernate.c3p0.acquire_increment">3</property>
+    <!--<property name="hibernate.current_session_context_class">thread</property>-->
+    <!--<property name="hibernate.c3p0.unreturnedConnectionTimeout">30</property>
+    <property name="hibernate.c3p0.debugUnreturnedConnectionStackTraces">true</property>-->
+    
+    <mapping class="Modelo.GerenciamentoDadosGeotecnicos.Classe"/>    
+    <mapping class="Modelo.GerenciamentoDadosGeotecnicos.Ensaio"/>   
+    <mapping class="Modelo.GerenciamentoDadosGeotecnicos.Ilha"/>
+    <mapping class="Modelo.GerenciamentoDadosGeotecnicos.Parametro"/>
+    <mapping class="Modelo.GerenciamentoDadosGeotecnicos.Valor"/>
+    <mapping class="Modelo.GerenciamentoDadosGeotecnicos.TipoParametro"/>
+    
+    <mapping class="Modelo.GerenciamentoUsuarios.Usuario"/>
+    <mapping class="Modelo.GerenciamentoUsuarios.Permissao"/>
+    <mapping class="Modelo.GerenciamentoUsuarios.Perfil"/>
+    
+    <mapping class="Modelo.GerenciamentoExpressoes.Elemento"/>  
+    <mapping class="Modelo.GerenciamentoExpressoes.Operador"/>  
+    <mapping class="Modelo.GerenciamentoExpressoes.Simbolo"/>  
+    <mapping class="Modelo.GerenciamentoExpressoes.FatorAjuste"/>  
+    
+    <mapping class="Modelo.GerenciamentoExpressoes.ParametroPlotagem"/>  
+    
+    <mapping class="Modelo.GerenciamentoArquivos.TemplatePadrao"/>    
+
+  </session-factory>
+  
+</hibernate-configuration>
